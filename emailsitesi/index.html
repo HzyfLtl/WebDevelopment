@@ -1,0 +1,207 @@
+    <!DOCTYPE html>
+    <html lang="en" dir="ltr">
+
+    <head>
+      <meta charset="utf-8">
+      <title>E-Mail Sitesi</title>
+
+      <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> <!-- font-family ubuntu için. css dosyalarının üstüne -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> <!-- icon lar için -->
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/style.css">
+
+      <!-- Bootstrap Scripts. Şu an React ı öğrenmediğimiz için Jquery i ekledik. Sonra öğreneceğiz.-->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+      <script src="js/bootstrap.js" charset="utf-8"></script>
+      <!--JavaScript dosyasının import etme. -->
+
+    </head>
+
+    <body>
+      <!--Sayfanın üst kısmı-->
+      <section id="ust-kisim">
+        <!--Sayfayı bölümlere ayırmak için section kullanılır. div gibi. -->
+
+        <div class="container-fluid arkaplan-mavi text-white r-l-fluid-padding">
+          <!-- Buradaki çoğu class ı bootstrap ten alıyoruz. -->
+
+          <nav class="navbar navbar-expand-lg navbar-dark bg-warning nav-radius">
+            <!--"navbar-light" arkaplan beyaz, yazı siyah. "navbar-dark" arkaplan siyah, yazı beyaz. -->
+            <a class="navbar-brand" href="#">E-Mail</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" href="#">Yorumlar<span class="sr-only">(current)</span></a>
+                <a class="nav-link active" href="#">Bize Ulaşın</a>
+              </div>
+            </div>
+          </nav>
+
+          <div class="row ust-alt-bosluk">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <h1 class="slogan">Dakikalar içerisinde, sadece bir buton yardımıyla
+                ürünü milyonlarca insana ulaştırmaya ne dersin?</h1>
+              <div class="indirme-linkleri">
+                <button type="button" class="btn btn-secondary btn-lg"><i class="fab fa-android"></i> Download</button>
+                <button type="button" class="btn btn-light btn-lg ml-3"><i class="fab fa-apple"></i> Download</button>
+                <!-- ml-3 = margin-left:1rem; -->
+              </div>
+            </div>
+            <!--geniş ekran 6 birim
+                orta boy ekran 6 birim
+                küçük boy ekran 12 birim -->
+            <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
+              <!-- d-flex = display:flex;  justify-content-center = justify-content:center;  "Bu classlar Bootstrap ten alınmıştır." -->
+              <img class="resim" src="resimler/mobil.png" alt="">
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!--Reklam Bölümü-->
+      <section id="reklam">
+        <div class="container-fluid r-l-fluid-padding">
+          <div class="row text-center">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <i class="fas fa-rocket fa-4x"></i>
+              <h2>Hızlı Erişim</h2>
+              10 dakika içerisinde yüzbinlerce e-mail göndererek müşteri portföyünüzü genişletin.
+              <!-- Bu icon u aldığımız https://fontawesome.com/icons/ adresinde belittiği üzere icon u büyütmek için "fa-4x" yazdık. -->
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <i class="fas fa-dollar-sign fa-4x"></i>
+              <h2>Uygun Fiyat</h2>
+              Çok düşük bir maliyet ile reklamınızı yapın. Ortalama 0.001 TL ile mail gönderebilirsiniz.
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <i class="far fa-smile fa-4x"></i>
+              <h2>Kalıcı Reklam</h2>
+              Mailler, müşterilerin mail hesaplarında uzun süre durur, bu da reklam süresini uzatır.
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <i class="fas fa-comments fa-4x"></i>
+              <h2>Birebir İletişim</h2>
+              Ulaşacağınız müşteriler ile doğrudan iletişim kurabilir, sorularına cevap verebilirsiniz.
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Yorumlar Bölümü - Başlangıç -->
+      <section id="yorumlar">
+        <div class="container-fluid r-l-fluid-padding arkaplan-mavi">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <!-- carousel-item in her biri ayrı bir slaytı gösteriyor. -->
+                <div class="text-center text-light yorum">
+                  <p>Bu kadar kaliteli bir hizmet beklemiyordum doğrusu. Ayrıca müşteri temsilcisi de çok yardımseverdi. Müşterilerden de güzel geri dönüşler alıyorum.</p>
+
+                  <img class="rounded-circle" src="http://webdevexamples.herokuapp.com/emailmarketing/resimler/foto.png" alt="">
+                  Ahmet Soyer
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="text-center text-light yorum">
+                  <p>Çok hızlı bir geri dönüş oldu. Dakikalar içerisinde binlerce mail gönderdim. Anında geri dönüş yapanlar oldu, gerçekten heyecan verici bir sistem.
+                  </p>
+
+                  <img class="rounded-circle" src="http://webdevexamples.herokuapp.com/emailmarketing/resimler/foto.png" alt="">
+                  M. Burak Güneş
+                </div>
+
+              </div>
+              <div class="carousel-item">
+                <div class="text-center text-light yorum">
+                  <p>
+                    E-mail marketing ile daha önceden de çalışmıştım ancak sizden aldığım sistem diğerlerine göre daha hızlı. Sürekli sizden paket almayı düşünüyorum.
+                  </p>
+
+                  <img class="rounded-circle" src="http://webdevexamples.herokuapp.com/emailmarketing/resimler/foto.png" alt="">
+                  Ayşegül Karaca
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Fiyatlandırma Bölümü - Başlangıç -->
+      <section id="fiyatlandirma" class="fiyatlandirma">,
+        <div class="container-fluid r-l-fluid-padding">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card text-center">
+                <h5 class="card-header">Aylık</h5>
+                <div class="card-body">
+                  <h5 class="card-title">9.99$</h5>
+                  <p class="card-text">Günlük 1.000 Mail <br> 7/24 Erişim <br> Teknik Destek Yok <br> </p>
+                  <a href="#" class="btn btn-primary">Satın Al</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card text-center">
+                <h5 class="card-header">Yıllık</h5>
+                <div class="card-body">
+                  <h5 class="card-title">9.99$</h5>
+                  <p class="card-text">Günlük 1.000 Mail <br> 7/24 Erişim <br> Teknik Destek Yok <br> </p>
+                  <a href="#" class="btn btn-primary">Satın Al</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+              <div class="card text-center">
+                <h5 class="card-header">Ömür Boyu</h5>
+                <div class="card-body">
+                  <h5 class="card-title">9.99$</h5>
+                  <p class="card-text">Günlük 1.000 Mail <br> 7/24 Erişim <br> Teknik Destek Yok <br> </p>
+                  <a href="#" class="btn btn-primary">Satın Al</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+
+
+      <!-- footer bölümü - başlangıç. -->
+      <section id="footer" class="text-light">
+        <div class="container-fluid r-l-fluid-padding arkaplan-mavi">
+          <a href="#"> <i class="fab fa-facebook"></i> </a> <!--a tagı text-light tan sonra geldiği için linkler mavi oldu. -->
+          <a class="mr-1 ml-1" href="#"> <i class="fab fa-twitter"></i> </a>
+          <a target="_blank" href="#"> <i class="fab fa-instagram"></i> </a>  <!-- target="_blank" yazarsan link yeni boş sayfaya götürür. 
+
+          <span class="pl-2">2020 - Tüm Hakları Google.com'a aittir.</span>
+        </div>
+
+      </section>
+
+
+
+    </body>
+
+    </html>

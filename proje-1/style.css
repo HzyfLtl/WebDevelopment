@@ -1,0 +1,101 @@
+.ortak {
+  float: left;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 25px;
+  box-sizing: border-box;
+  /*Kutularımızın genişliği sabitlendi. böylelikle padding kutunun boyutunu engelliyemedi. */
+  }
+
+.icon1 {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(135deg, #5EB5FE 0%, #E933D1 100%);
+  border-radius: 50%;
+  font-size: 3.2rem; /*icon un boyutunu ayarlamak için kullanılır. Ama resimler için kullanamayız. Aldığımız site bu iconları text gibi ayarlamış ama biz net ten resim şeklinde de alabilirdik.*/
+  color: white;
+  display: flex;  /* Bunun daha detayl kullanımları için "https://www.w3schools.com/css/css3_flexbox.asp" sitesine bakabilirsin. */
+  align-items: center; /* satır için ortalama */
+  justify-content: center; /* sütun için ortalama */
+  margin: 0 auto; /* Boylelikle element ortalanır. Yani sağdan ve soldan otomatik olarak eşit uzaklık verir. Bunun olması için element başka bir elementin içinde olması gerekiyor. */
+  /* flex-wrap: wrap; */ /* Bu kod itemleri sıralamaya yarar. Eğer itemler satırdan taşıyorsa alt satıra iner. */
+}
+
+.icon2 {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(135deg, #F327D7 0%, #FBEE88 100%);
+  border-radius: 50%;
+  font-size: 3.2rem;
+  color: white;
+  display: flex;  /* Bu 3 kod sayesinde icon kendisi için yaptığımız yuvarlağın ortasına gitti. */
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.icon3 {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(135deg, #9353FF 0%, #36FE80 100%);
+  border-radius: 50%;
+  font-size: 3.2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.kutu1 {
+  width: 275px;
+  height: 400px;
+  background: linear-gradient(135deg, #5EB5FE 0%, #E933D1 100%);
+  /*deg=degree=açı - Mavi ile başlayıp, yüzde 0, mora doğru, yüzde 100, kayan bir görüntü elde ettik. */
+  /* Derece bize renklerin hangi eğimle skala değiştireceğini gösteriyor. Mesela eğer 90 yapsaydık, 90 derece, renk soldan başlar sağda biterdi. Ama bu durumda sol üsten başlayıp sağ altta bitiyor. */
+  /* https://i2.wp.com/onaircode.com/wp-content/uploads/2019/09/pricing-table-ui.jpg?fit=1325%2C773&ssl=1
+  resmindeki gibi yaptık. Bu resimdeki renk kodlarını https://pixlr.com/e/ sitesi sayesinde bulduk.  */
+  /* Bu görüntüler photoshop ile de yapılabilir ama sayfanın boyutu yükselir ve sayfanın açılma hızı azalır. */
+  margin-top: 35px;
+  /*ortak yazdığımız class lar genellikle yukarıda kalmalı çünkü özelleştirmeler aşağıda olmalı ki uygulansın. */
+}
+
+.kutu2 {
+  width: 275px;
+  height: 440px;
+  background: linear-gradient(135deg, #F327D7 0%, #FBEE88 100%);
+}
+
+.kutu3 {
+  width: 275px;
+  height: 400px;
+  background: linear-gradient(135deg, #9353FF 0%, #36FE80 100%);
+  margin-top: 35px;
+}
+
+.title{
+  font-size: 1.5rem;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.fiyat{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.dolar{
+  margin-bottom: 20px;
+}
+
+.bilgiler{
+  color: white;
+  font-size: 1.2rem;
+
+}

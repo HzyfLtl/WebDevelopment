@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Ubuntu:wght@300&display=swap');
+
+/* Goggle Fonts sitesinden seçtiğimiz yazı stilini import kısmından buraya kopyaladık. link kısmından da kopyalayıp HTML dosyasının içine de yapıştırabilirdik */
+/* import ettiğimiz yazı tiplerini kullanmak için G.Fonts da import kısmının altında yazan tagı koduyla birlikte kullanıyoruz. */
+body {
+  margin: 0;
+  /* Sıfır yazmamın sebebi, hiçbir şey yazmadığımızda sayfanın default olarak 8px boşluk bırakmasıdır. */
+  font-family: 'Ubuntu', sans-serif;
+  /* import ile yaptık */
+}
+
+.container-fluid {
+  background-color: #ff5336;
+  color: #ffff73;
+  font-size: 2rem;
+  /* text-align: right; */
+  padding: 0 100px;
+  position: sticky;
+  top: 0; /*bu 2 kod gösteriyor ki container-fluid top 0 dan ayrılınca sayfada gözüküyor ama top 0 a geri dönünce ona yapışıyor. Kendisini top 0 a sabitler. */
+
+}
+
+.sol-sag-padding {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.container {
+  background-color: #00ff74;
+  padding: 2% 10%;
+}
+
+h1 {
+  border-left: 5px dashed #df6478;
+  padding-left: 7px;
+  background-color: #ffffff66;
+  /* Bazı saydamlık kodları var. Bu kodaları renk kodumuzdan sonra kullandığımızda seçtiğimiz yüzdeye göre o yere saydamlık kazandırabiliriz. */
+  font-family: 'Grandstander', cursive;
+  /* link ile yaptık */
+  text-align: center;
+  /* right, left */
+}
+
+.linkler a {
+  font-size: 1.3rem;
+  color: #790c5a;
+  text-decoration: none;
+  /* underline - linkin default olarak gelen alt çizgisini kaldırmak için kullanıyoruz. */
+  padding-left: 3px;
+  padding-right: 10px;
+  border: 2px solid #590995;
+  border-radius: 5px;
+  padding: 0 1rem;
+  margin-left: 1rem;
+}
+
+.linkler a:hover {
+  color: #ffff73;
+  background-color: #590995;
+}
+
+.logo {
+  display: inline-block;
+  /* Ne olduğu notlarda yazılı. Kısaca serbestçe ve rahat bir şekilde tagları yönetmemize yardımcı oluyor. Ama float ta element div in içerisinde ise div e göre konum alır. */
+  margin: 10px;
+  padding: 10px;
+  border: 2px dashed;
+  border-radius: 10px;
+  font-family: 'Marck Script', cursive;
+  /* import ile yaptık */
+  /*box-sizing: border-box;*/
+  /* Bu kod sayesinde yazılan padding lerle otomatik büyüyen elementin büyümesi durdurulur ve sabit bir değer üzerinden padding yapılır. Sırf padding için değil diğer özellikler için de böyledir.  */
+}
+
+.linkler {
+  float: right;
+  /* Elementi sayfaya göre sağa soğa yerleştirir. align ise belli bir bloktaki elementi bloka göre yerleştiriyor.  */
+  height: 75px;
+  margin-top: 10px;
+  display: flex;
+  /* Elementin içindeki elementleri rahatça düzenlemek için kullanılır. Biz burada yazıları yukarı ve aşağıya göre ortalamak için yaptık. */
+  align-items: center;
+  justify-content: center;
+  /* Kutunun büyüklüğüyle orantılı itemler arasında boşluk bırakmak istiyorsak space-around veya space-between kullanabiliriz. */
+}
+
+.profil-resmi {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  /* (sol-üst  sağ-üst  sağ-alt  sol-alt) - (75px) - (75px 75px) - (75px 75px 75px 75px) */
+  /* 50% - resmi yuvarlarken en fazla yarısı kadar yuvarlayabiliriz. Bu yüzden 50% den büyük değerler yine 50% ile aynı görüntüyü verir. Örnek: 999px */
+}
+
+.hakkimda {
+  border: 5px solid red;
+  /* border: solid / border: 1px dashed #ff0000 /  */
+  padding: 2% 2%;
+  background-color: #cffffe;
+}
+
+.hakkimda-yazi {
+  padding-left: 2rem;
+}
+
+.hobilerim {
+  border: 1rem dashed #00f00f;
+  padding: 2% 2%;
+  margin: 2% 0;
+  /* margin-top: %2;  margin-bottom: 2%; */
+  background-color: #f9f7d9;
+}
+
+.hobilerim-yazi {
+  padding-right: 2rem;
+}
+
+.hobi-resmi {
+  width: 150px;
+  height: 150px;
+  border: 2px dashed;
+  border-radius: 50px 20px;
+}
+
+.bildigim-diller {
+  border: solid;
+  border-radius: 20px;
+  padding: 2% 2%;
+  background-color: #fce2ce;
+}
+
+.bildigim-diller-yazi {
+  padding-left: 2rem;
+}
+
+.bildigim-diller-resmi {
+  width: 150px;
+  height: 150px;
+  border-radius: 0 30px 30px 0;
+}
+
+/*En alt kısım*/
+.container-alt {
+  display: flex;
+  padding: 0 100px;
+}
+
+.footer-arkaplan {
+  background-color: #232F3E;
+}
+
+.menu {
+  width: 25%;
+  padding: 15px;
+}
+
+.başlık {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.menu ul {
+  padding: 0;/*default olarak gelen padding i silmek için. */
+}
+
+.menu ul li {
+  list-style-type: none;/*list itemlerin noktalarını kaldırır. */
+  padding: 3px 0;
+}
+
+.menu ul li a{  /* .menu a{} diye de yazılabilir. */
+  color: #dddddd;
+  text-decoration: none; /*linkin altındaki çizgiyi kaldırır. */
+}
+
+.menu ul li a:hover{
+  text-decoration: underline; /*altına çizgi ekledik*/
+}
+
+.ustegeridon{
+  background-color: #485769;
+  padding: 10px;
+  text-align: center;
+
+}
+
+.alt-link{
+    color: #dddddd;
+  text-decoration: none;
+}
+
+.alt-link:hover{
+  text-decoration: underline;
+}
+
+.alt-link:hover .ustegeridon{ /* ".ustegeridon:hover" diye de olur. alt-link in üzerine gelince ustegeridon değişsin. */
+  background-color: #384759;
+}

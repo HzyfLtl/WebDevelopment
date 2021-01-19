@@ -1,0 +1,57 @@
+/* YORUM */
+.kirmizi{
+  color: #ff0000;
+}
+/*
+Eğer tag ile ilgili bir
+işlem varsa, tag tercih edilir.
+body{
+  background-color: #d8d3cd;
+}
+*/
+/*
+.arkaplan-rengi{
+  background-color: #d8d3cd;
+}
+Şeklinde de yapılabilir. Ama body ile ilgili başka işlemler de varsa yularıdaki gibi body tagı tercih edilir.
+*/
+
+.arkaplan-rengi{
+  background-color: #d8d3cd;
+}
+.kutu{
+  width: auto;
+  height:150px;
+  background-color: #bfdcae;
+  color:white;
+  /*margin-left: 50px;
+  margin-top: 50px;
+  margin-right: 50px;
+  margin-bottom:50px;*/
+  margin:20px 10% 0 10%;
+  /*padding-left:40px;
+  padding-top:20px;
+  padding-right:40px;
+  padding-bottom: 20px;*/
+  padding: 30px 20px;
+}
+img{
+  width:150px;
+  height:150px;
+}
+.deniz{
+  margin-right:15px;
+}
+.manzara{
+  margin-left:15px;
+}
+.kutu-bir{
+  width: auto;
+  height: 150px;
+  background-color: #00b7c2;
+  color: white;
+  margin:0 10% 0 10%;
+  padding: 30px 20px;
+  font-weight: bold; /*Yazıyı kalınlaştırır. Bond yerine sayı yazarakta kalınlığı ayarlayabiliriz.*/
+  /*font-weight: normal;*/  /* Kalınlığı değiştirilmiş bir yazıyı normal hale getirir. */
+}

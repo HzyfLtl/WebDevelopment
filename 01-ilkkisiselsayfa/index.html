@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Huzeyfe'nin Kişisel Web Sayfası</title>
+
+  <style> /* Bu style body nin içinde de olabilir ama karışıklığı önlemek açısından head in içinde oluşturmak daha iyidir. */
+    body {
+      background-color: #f1e189;
+    }
+
+    h1 {
+      color: #6a097d;
+    }
+
+    h2 {
+      font-size: 1.7rem;
+      color: #2d6187;
+    }
+
+    h2:hover {  /*Üzerine mouse geldiğinde oluşacak görünüm. */
+      font-size: 2rem;
+      color: #ff0000;
+    }
+
+    a {
+      color: #790c5a;
+    }
+
+    /*
+     img{
+      height: 140px; <!--  olabilir -->
+      width: 10rem; <!--  olabilir -->
+    }
+    */
+
+    hr{
+      width: 75%; <!-- Yüzde ifade sayfayı büyütme durumunuza göre çizgiyi uzatır veya kısaltır. Bunun yerine sabit değerler olarak; 250px gibi değerler de girilebilir. -->
+    }
+
+/* class değeri "isim" olan element */
+    .isim{
+      color: #0000ff;
+      background-color: #00ff00;
+    }
+
+  </style>
+
+
+
+
+</head>
+
+
+<body>
+  <!-- style dan sonra (yani css kodlarından sonra satır sonuna) alt tarafa başka attruibute lar ekleyeceksek noktalı virgül koymalıyız. -->
+  <a href="http://google.com">
+    <img src="https://www.google.com.tr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="logo">
+  </a>
+
+  <img src="https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2017/08/nature-design.jpg" alt="profil resmi" width="1200">
+
+  <img height="200" src="C:\Users\Huzeyfe\Desktop\Coding\TechProEd,Full-StackWebDeveloper\WebDevelopment\ilkkisiselsayfa\resimler\shutterstock.jpg" alt="profil resmi-2">
+  <img width="200" src="resimler\shutterstock.jpg" alt="profil resmi-3">
+  <img height="200" width="200" src="resimler\shutterstock.jpg" alt="profil resmi-4">
+
+  <h1 class="isim">Huzeyfe Oltulu</h1>
+  <h3>Bilgisayar mühendisiyim, <em>web uygulamaları</em> geliştiyorum. JavaScript, HTML ve CSS biliyorum.</h3>
+  <h3>Ben <a style="color:#9ba4b4;" target="_blank" href="https://techproeducation.com">Techproeducation</a>.com'da çalışıyorum.</h3>
+  <p>Bana ulaşmak için bu <a href="C:\Users\Huzeyfe\Desktop\Coding\TechProEd,Full-StackWebDeveloper\WebDevelopment\ilkkisiselsayfa\banaulasin.html">link</a>e tıklayabilirsiniz.</p>
+  <!--Veya <a href="banaulasin.html"> kullanılabilir. Aynı klasörde olduğu için! -->
+
+  <br>
+  <hr>
+
+  <h2 class="isim">Eğitim</h2>
+
+  <ul>
+    <li>İÖO</li>
+    <li>Lise</li>
+    <li>Üniversite</li>
+  </ul>
+
+  <ol>
+    <li><u>1995-2003</u> Çapa İÖO </li>
+    <li>2003-2007 Cağ lisesi</li>
+    <li>2008-2014 ODTÜ</li>
+  </ol>
+
+  <hr /> <!-- <hr> veya <hr /> aynı işlevi yapar -->
+
+  <h2>Tecrübeler</h2>
+
+  <ol>
+    <li>Techproeducation'da Teknik Destek </li>
+    <li>Tübitak'ta Sistem Kontrol Takım Liderliği</li>
+    <li>Aslan Yazılım Şirket Kurucusu</li>
+    <li>Techproeducation'da Çaycı</li>
+  </ol>
+
+  <hr>
+
+  <h2 style="color:#ffffff; style=" font-size:1.5rem;">Bildiğim Programlama Dilleri</h2>
+
+  <table style="background-color:#b0cac7;" border="1">
+    <!-- " "border="" " tagı ile veriler arası çizgi koyabiliriz. Sayıyı artırırsak çizgi kalınlaşır. -->
+    <thead>
+      <tr>
+        <th width="75"></th>
+        <th width="100">Programlama Dili</th> <!-- tr de kullanılabilir ama başlığı kalınlaştırmaz -->
+        <th width="300">Başlangıç Yılı</th>
+        <th>Seviye</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td align="center">1</td>
+        <td align="left">Java</td>
+        <td align="right">2010</td>
+        <td>İyi</td>
+      </tr>
+
+      <tr align="center">
+        <td>2</td>
+        <td>PHP</td>
+        <td bgcolor="red">2014</td>
+        <td>Orta</td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td>C#</td>
+        <td>2018</td>
+        <td bgcolor="pink">Başlangıç</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <table>
+    <tbody>
+      <!-- "tbody" şart değil -->
+      <td>
+        <a href="http://google.com">
+          <img src="https://www.google.com.tr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="logo">
+        </a>
+      </td>
+
+      <td>
+        <h3>Bilgisayar mühendisiyim, <em>web uygulamaları</em> geliştiyorum. JavaScript, HTML ve CSS biliyorum.</h3>
+      </td>
+    </tbody>
+  </table>
+
+
+</body>
+
+</html>

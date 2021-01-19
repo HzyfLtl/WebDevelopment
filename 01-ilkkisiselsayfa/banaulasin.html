@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <h1><u><em>Bana Ulaşın</em></u></h1>
+
+  <p>
+    Adres: İstanbul, Üsküdar <br>
+    No: 444 369 299 <br>
+    Mail: talha.bayburtlu.02@gmail.com <br>
+  </p>
+
+  <!-- Veya:
+    <table>
+      <tr>
+      <td>Adres:</td>
+      <td>İstanbul, Üsküdar</td>
+    </tr>
+
+    <tr>
+    <td>No:</td>
+    <td>444 369 299</td>
+  </tr>
+
+  <tr>
+  <td>Mail:</td>
+  <td>talha.bayburtlu.02@gmail.com</td>
+  </tr>
+    </table>
+
+    Veya
+
+    <ul>
+      <li>Adres: İstanbul, Üsküdar</li>
+      <li>No: 444 369 299</li>
+      <li>Mail: talha.bayburtlu.02@gmail.com</li>
+    </ul>
+      -->
+
+  <hr>
+
+    <form class="" action="index.html" method="post"> <!-- action="mailto:" yazıp mailto dan sonra mail adresi yazarsan bu form bilgiler mail göndermeye gönderilir. -->
+    İsminiz: <br>
+    <input type="text" name="name" value=""> <br><br>
+    <!--Tırnak işaretlerinin içine yazabileceğin olası ifadeleri görmek istiyorsan CTRL+Space e bas. -->
+    <label>Mesajınız: </label> <br>
+    <textarea name="mesaj" rows="8" cols="50" maxlength="140" minlength="10"></textarea> <br><br> <!-- value içindeki yazı kutucukta çıkar ama kullanıcı kutucuğu doldururken o yazıyı silmelidir. Daha iyi kullanımı ileride öğretilecektir. -->
+    <label for="">Mail Adresiniz: </label> <br>
+    <input type="email" name="email" value="Email  Giriniz"> <br><br>
+    <label>Cinsiyet:</label> <br>
+    <input type="radio" name="cinsiyet"> <label>Bay</label>
+    <input type="radio" name="cinsiyet"> <label>Bayan</label>
+    <!--Aynı name değerini yaz. Yazmazsan bir kutucu seçtiğinde diğer kutucuk iptal olmaz. iStersen hepsini seçebilirsin. Cinsiyet için hem bay hem de bayan seçmek mantıklı olmaycağı için ayrı isimlere göndermek iyi olmaz. -->
+
+<!--
+    <br><br>
+    <input type="submit" name="" value="Gönder">
+    <br><br>
+    <input type="color" name="" value=""> <br>
+    <input type="date" name="" value=""> <br>
+    <input type="password" name="" value=""> <br>
+
+    <div class="">
+      <p>Merhaba Dünya!</p>
+    </div>
+
+    <span>
+      <p>Merhaba Dünya!</p>
+    </span>
+-->
+
+  </form>
+
+</body>
+
+
+</html>

@@ -1,0 +1,102 @@
+.navbar{
+  padding: 0 1rem;
+}
+
+.arkaplan-mavi{
+  background-color: #073B4C;
+}
+
+.ust-kisim-bosluk{
+  padding: 2% 5%;
+}
+
+.nav-radius{
+  border-radius: 1rem;
+}
+
+/*justify-content: end;*/ /*Flex elementleri sağa yanlar. */
+
+.navbar-brand{ /*bu bootstrap te de var ama biz burada da kullanabiliriz ve bizim css dosyası daha altta olduğundan bizimki çalışır. */
+font-size: 2.2rem; /* bootstrap ten de özellikleri alır ama burada yazdıklarımızı değiştirir. */
+font-weight: bold;
+font-family: 'Ubuntu';
+}
+
+.ust-alt-bosluk{
+  padding: 45px 0;
+}
+
+.slogan{
+  font-family: 'Ubuntu';
+  font-size: 2rem;
+  margin-bottom: 10%;
+  line-height: 1.5; /* Satırlar arasındaki boşluk. */
+}
+
+@media (min-width:768px){ /*Ekranın genişliğine göre siteyi ayarlama. */
+  .resim{
+    width: 50%;
+    transform: rotate(25deg); /*Dereceye göre döndürüyor.*/
+  }
+}
+
+@media (max-width:767px){ /*Ekranın genişliğine göre siteyi ayarlama. */
+  .resim{
+    width: 50%;
+    transform: rotate(0deg); /*Dereceye göre döndürüyor.*/
+    margin-top: 30px;
+  }
+
+  .indirme-linkleri{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.fas{
+  color: #ffd166;
+  margin-bottom: 5%;
+}
+
+.far{
+  color: #ffd166;
+  margin-bottom: 5%;
+}
+
+h2{
+  font-size: 1.8rem;
+}
+
+.yorum{
+  padding: 3% 12%;
+}
+
+.yorum p{
+  font-size: 1.5rem;
+}
+
+.yorum img{
+  width: 10%
+}
+
+.fiyatlandirma .container-fluid .row div{ /*css dosyalarında id kullanmak önerilmediğinden  "class="fiyatlandirma"" diye class oluşturduk. Yoksa "#fiyatlandirma .container-fluid .row div{}" tarzı da yapabilirdik. */
+  margin-top: 10px;
+}
+
+@media (min-width: 992px) {
+  .r-l-fluid-padding{
+    padding: 3% 15%;
+  }
+}
+
+@media (max-width: 991px) {
+  .r-l-fluid-padding{
+    padding: 3% 3%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .r-l-fluid-padding{
+    padding: 3% 20%;
+  }
+}
